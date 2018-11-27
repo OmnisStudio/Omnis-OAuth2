@@ -1,0 +1,3 @@
+;
+Calculate iCallbackMethodAuthWindow as pCallbackMethod
+Set reference iCallbackObjectAuthWindow to pCallbackInstance

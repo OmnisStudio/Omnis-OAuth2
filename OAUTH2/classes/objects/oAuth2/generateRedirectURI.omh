@@ -1,0 +1,6 @@
+;  Here we generate the redirect URI.
+Calculate lRedirectURI as con('http://localhost:',$root.$prefs.$serverport,'/api/oauth2/',$clib.$remotetasks.rtAuthEndpoints.$restfulapiname,'/code')
+Quit method lRedirectURI
+
+;  When using Omnis' built-in API endpoints, the redirect URI should look like this:
+;  http://localhost:#omnis server port#/api/#name of the library#/#$restfulapiname value of the remote task#/#API endpoint name#

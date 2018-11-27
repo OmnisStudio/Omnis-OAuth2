@@ -1,0 +1,10 @@
+;  Generate an UUID
+Do OWEB.$makeuuid(kFalse) Returns lUUID
+Quit method lUUID
+
+;  We use the UUID in the headers of the code request in order to identify
+;  the instance which made the request when the API endpoints redirects
+;  the user back to our URI.
+
+;  The reason we do this is to add an asynchronous nature
+;  to this application.

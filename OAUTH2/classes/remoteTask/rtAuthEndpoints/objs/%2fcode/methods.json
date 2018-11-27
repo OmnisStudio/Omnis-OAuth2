@@ -1,0 +1,49 @@
+[
+	{
+		"name": "$get",
+		"ident": 0,
+		"order": 1,
+		"operationid": "get1001",
+		"outputtype": "",
+		"pvardefs": [
+			{
+				"name": "pHeaders",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "code",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 2,
+				"initval": "#NULL"
+			},
+			{
+				"name": "state",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 3,
+				"initval": "#NULL"
+			},
+			{
+				"name": "scope",
+				"order": 4,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 4,
+				"initval": "#NULL"
+			}
+		],
+		"lvardefs": [
+
+		]
+	}
+]

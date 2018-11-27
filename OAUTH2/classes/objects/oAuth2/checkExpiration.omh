@@ -1,0 +1,4 @@
+;  Check if the current time is greater than the access token expiration time and return a true flag if it is expired.
+;  This method will also return a false flag if the access token is not expired.
+Do getdatetime() Returns lCurrentTime
+Quit method iRow.ExpiresOn<lCurrentTime

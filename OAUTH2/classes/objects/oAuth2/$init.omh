@@ -1,0 +1,16 @@
+;  Calculate all the parameters in the instance row
+Calculate iRow.ClientID as pClientID
+Calculate iRow.ClientSecret as pClientSecret
+Calculate iRow.CodeURL as pCodeURL
+Calculate iRow.TokenURL as pTokenURL
+Calculate iRow.Scope as pScope
+;  Build all the necessary things for the requests
+Do method generateUUID Returns iRow.UUID
+If len(pRedirectURI)=0
+	Do method generateRedirectURI Returns iRow.RedirectURI
+End If
+Do method buildCodeParameters Returns iRow.CodeParameters
+Do method buildTokenHeaders Returns iRow.TokenHeaders
+Do method buildRefreshHeaders Returns iRow.RefreshHeaders
+Do method buildRefreshContent Returns iRow.RefreshContent
+Do method buildTokenContent Returns iRow.TokenContent

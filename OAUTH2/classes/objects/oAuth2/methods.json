@@ -1,0 +1,599 @@
+[
+	{
+		"name": "$construct",
+		"ident": 1,
+		"order": 1,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$destruct",
+		"ident": 2,
+		"order": 2,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "----- Public Methods -----",
+		"ident": 0,
+		"order": 3,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$init",
+		"ident": 3,
+		"order": 4,
+		"pvardefs": [
+			{
+				"name": "pClientID",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1,
+				"desc": "REQUIRED - The Client ID is provided by the service you are trying to access."
+			},
+			{
+				"name": "pClientSecret",
+				"order": 4,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 2,
+				"desc": "REQUIRED - The Client Secret is provided by the service you are trying to access."
+			},
+			{
+				"name": "pCodeURL",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 3,
+				"desc": "REQUIRED - The Authorization Code URL is provided by the service you are trying to access."
+			},
+			{
+				"name": "pTokenURL",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 4,
+				"desc": "REQUIRED - The Authorization Token URL is provided by the service you are trying to access."
+			},
+			{
+				"name": "pScope",
+				"order": 6,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 5,
+				"desc": "OPTIONAL - Please refer to your service API documentation to find out if this paramenter is needed."
+			},
+			{
+				"name": "pRedirectURI",
+				"order": 5,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 6,
+				"initval": "\"\"",
+				"desc": "OPTIONAL - If using Fat client this can be auto-generated. REQUIRED for JS Client."
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setToken",
+		"ident": 31,
+		"order": 5,
+		"pvardefs": [
+			{
+				"name": "pAccessToken",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1,
+				"desc": "REQUIRED - The access token you would like to pass to this instance."
+			},
+			{
+				"name": "pRefreshToken",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 2,
+				"desc": "OPTIONAL - The refresh token you would like to pass to this instance. If none is passed, the access token won't be refreshed if expired."
+			},
+			{
+				"name": "pExpiresOn",
+				"order": 3,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 0,
+				"param": 3,
+				"desc": "OPTIONAL - The expiration date fo the access token. If none is passed, the access token won't be refreshed."
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$getAuthCodeParameters",
+		"ident": 4,
+		"order": 6,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setAuthCodeParameter",
+		"ident": 5,
+		"order": 7,
+		"pvardefs": [
+			{
+				"name": "pKey",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1,
+				"desc": "Code header key."
+			},
+			{
+				"name": "pValue",
+				"order": 4,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 2,
+				"desc": "Code header value."
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lCurrentHeaders",
+				"order": 1,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lLine",
+				"order": 2,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$getToken",
+		"ident": 6,
+		"order": 8,
+		"pvardefs": [
+			{
+				"name": "pCallbackObject",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1,
+				"desc": "REQUIRED - Callback object once the access token is received."
+			},
+			{
+				"name": "pCallbackMethodSuccessful",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 2,
+				"initval": "\"$tokenReceived\"",
+				"desc": "OPTIONAL - Callback method. Defaults to $tokenReceived if nothing is passed."
+			},
+			{
+				"name": "pCallbackMethodError",
+				"order": 4,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 3,
+				"initval": "\"$tokenError\"",
+				"desc": "OPTIONAL - Callback method. Defaults to $tokenError if nothing is passed."
+			},
+			{
+				"name": "pFormInstance",
+				"order": 3,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 4,
+				"desc": "OPTIONAL - Pass in $cinst if you are using a remote form."
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$clearToken",
+		"ident": 33,
+		"order": 9,
+		"notes": "This method will clear the access token stored in the oAuth2 instance.",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setManualAuthWindowCallback",
+		"ident": 25,
+		"order": 10,
+		"notes": "Use thsi method if you would like to manually handle the Authorization window. The specified callback method will be called on the specified instance and it will pass the URI which needs to be displayed to the user.\r",
+		"pvardefs": [
+			{
+				"name": "pCallbackInstance",
+				"order": 2,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pCallbackMethod",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 2
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "----- Builders -----",
+		"ident": 7,
+		"order": 11,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "generateUUID",
+		"ident": 8,
+		"order": 12,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lUUID",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "generateRedirectURI",
+		"ident": 17,
+		"order": 13,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lRedirectURI",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "buildCodeParameters",
+		"ident": 9,
+		"order": 14,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lHeaders",
+				"order": 1,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "buildTokenHeaders",
+		"ident": 10,
+		"order": 15,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lHeaders",
+				"order": 1,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "buildRefreshHeaders",
+		"ident": 11,
+		"order": 16,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lHeaders",
+				"order": 1,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "buildRefreshContent",
+		"ident": 13,
+		"order": 17,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lContent",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "buildTokenContent",
+		"ident": 12,
+		"order": 18,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lContent",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "finaliseTokenContent",
+		"ident": 26,
+		"order": 19,
+		"pvardefs": [
+			{
+				"name": "pCode",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lContent",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "checkExpiration",
+		"ident": 14,
+		"order": 20,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lCurrentTime",
+				"order": 1,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "----- API Endpoint Methods -----",
+		"ident": 15,
+		"order": 21,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$onCodeReceived",
+		"ident": 16,
+		"order": 22,
+		"notes": "DO NOT USE. This method is used by the oAuth2 library for automation purposes.",
+		"pvardefs": [
+			{
+				"name": "pAccessCode",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lError",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "closeAuthWindow",
+		"ident": 20,
+		"order": 23,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "----- HTTP Requests -----",
+		"ident": 18,
+		"order": 24,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "getNewToken",
+		"ident": 21,
+		"order": 25,
+		"pvardefs": [
+			{
+				"name": "pURI",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lURI",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "refreshToken",
+		"ident": 22,
+		"order": 26,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "requestToken",
+		"ident": 19,
+		"order": 27,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "----- OW3 -----",
+		"ident": 23,
+		"order": 28,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$completed",
+		"ident": 24,
+		"order": 29,
+		"pvardefs": [
+			{
+				"name": "pResults",
+				"order": 1,
+				"type": "kRow",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pObject",
+				"order": 2,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 2
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lResponse",
+				"order": 3,
+				"type": "kRow",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	}
+]

@@ -1,0 +1,3 @@
+Calculate iRow.AccessToken as ''
+Calculate iRow.RefreshToken as ''
+Calculate iRow.ExpiresOn as #NULL

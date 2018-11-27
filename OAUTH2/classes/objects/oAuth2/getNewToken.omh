@@ -1,0 +1,14 @@
+;  Let's get a code first
+Do OWEB.$makeuri(iRow.CodeURL,iRow.CodeParameters) Returns lURI
+;  Add the code request to the static queue
+Do code method cAuthQueue/$addToQueue ($cinst.$ref,iRow.UUID)
+;  Open the authorization URI in the browser if it came from a remote form
+;  or in a new window using the oBrowser object.
+If len(iCallbackMethodAuthWindow)>0
+	Do iCallbackObjectAuthWindow.[iCallbackMethodAuthWindow](lURI)
+Else If iAmJS
+	;  iAuthWindowID works only in the newer versions of Omnis Studio (10+)
+	Do iFormInstance.$showurl(lURI,'','',AUTHWINDOW) Returns iAuthWindowID
+Else
+	Open window instance wAuth2Browser/CEN (lURI)
+End If

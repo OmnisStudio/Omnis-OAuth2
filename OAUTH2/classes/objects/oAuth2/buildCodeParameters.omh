@@ -1,0 +1,11 @@
+;  Here we define the headers for the access code request.
+Do lHeaders.$define('','')
+Do lHeaders.$add('Accept','application/json')
+Do lHeaders.$add('response_type','code')
+Do lHeaders.$add('client_id',iRow.ClientID)
+Do lHeaders.$add('state',iRow.UUID)
+Do lHeaders.$add('redirect_uri',iRow.RedirectURI)
+If len(iRow.Scope)>0
+	Do lHeaders.$add('scope',iRow.Scope)
+End If
+Quit method lHeaders

@@ -1,0 +1,7 @@
+;  Search for the UUID in the statis list in order to get the reference to the oAuth2 instance
+Do cQueue.$search($ref.UUID=pState,1,0,0,0) Returns lLine
+If lLine>0
+	Set reference lAuthRef to cQueue.[lLine].C1
+	Do lAuthRef.$onCodeReceived(pCode)
+	Do cQueue.$remove(lLine)
+End If

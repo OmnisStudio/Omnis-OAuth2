@@ -1,0 +1,4 @@
+;  Make a request to get an access token
+Do iHTTPWorker.$callbackinst.$assign($cinst)
+Do iHTTPWorker.$init(iRow.TokenURL,kOW3httpMethodPost,iRow.TokenHeaders,iRow.TokenContent) Returns #F
+Do iHTTPWorker.$start() Returns #F

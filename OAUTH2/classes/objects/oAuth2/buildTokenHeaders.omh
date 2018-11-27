@@ -1,0 +1,9 @@
+;  Here we define the headers for the access token request.
+Do lHeaders.$define('','')
+Do lHeaders.$add('Accept','application/json')
+Do lHeaders.$add('content-type','application/x-www-form-urlencoded')
+Do lHeaders.$add('state',iRow.UUID)
+If len(iRow.Scope)>0
+	Do lHeaders.$add('scope',iRow.Scope)
+End If
+Quit method lHeaders

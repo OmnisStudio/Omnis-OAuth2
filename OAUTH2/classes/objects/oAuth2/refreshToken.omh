@@ -1,0 +1,4 @@
+;  Make request to refresh an expired access token
+Do iHTTPWorker.$callbackinst.$assign($cinst)
+Do iHTTPWorker.$init(iRow.TokenURL,kOW3httpMethodPost,iRow.RefreshHeaders,iRow.RefreshContent) Returns #F
+Do iHTTPWorker.$start() Returns #F

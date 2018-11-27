@@ -1,0 +1,3 @@
+;  Here we define the content that goes in the request for the access token.
+Calculate lContent as con('client_secret=',iRow.ClientSecret,'&client_id=',iRow.ClientID,'&grant_type=authorization_code','&redirect_uri=',iRow.RedirectURI)
+Quit method lContent

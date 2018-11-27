@@ -1,0 +1,28 @@
+{
+	"classtype": "kCode",
+	"internalversion": 10,
+	"designtaskname": "Startup_Task",
+	"cvardefs": [
+		{
+			"name": "cQueue",
+			"order": 1,
+			"type": "kList",
+			"subtype": "sAuthQueue",
+			"sublen": 0
+		}
+	],
+	"properties": {
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2018-11-07 20:36:49",
+		"desc": "",
+		"editor": "",
+		"editordata": "",
+		"external": true,
+		"moddate": "2018-11-13 10:23:15",
+		"showascheckedout": false,
+		"userinfo": "",
+		"version": ""
+	}
+}

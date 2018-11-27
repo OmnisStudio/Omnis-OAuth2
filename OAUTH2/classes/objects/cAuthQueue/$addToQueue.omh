@@ -1,0 +1,3 @@
+;  Add a reference to the oAuth object to the queue together with the UUID
+Set reference lAuthRef to pAuthRef
+Do cQueue.$add(lAuthRef,pUUID)

@@ -1,0 +1,39 @@
+;  Set reference to the callback object
+Set reference iCallbackObject to pCallbackObject
+;  Default the callback methods if has not been passed
+If len(pCallbackMethodSuccessful)=0
+	Calculate pCallbackMethodSuccessful as '$tokenReceived'
+End If
+Calculate iCallbackMethod as pCallbackMethodSuccessful
+
+If len(pCallbackMethodError)=0
+	Calculate pCallbackMethodError as '$tokenReceived'
+End If
+Calculate iCallbackMethodError as pCallbackMethodError
+;  Check if the client is using a remote form and set iAmJS to true if they are,
+;  otherwise set iAmJS to false.
+If len(pFormInstance)>=1
+	Calculate iAmJS as 1
+	Set reference iFormInstance to pFormInstance
+Else
+	Calculate iAmJS as 0
+End If
+;  Check if a new token is required or if there is a valid token saved in the instance row
+If len(iRow.AccessToken)=0
+	Do method getNewToken
+	Quit method kTrue
+Else
+	Do method checkExpiration Returns #F
+	If flag true
+		;  Check if we have a refresh token, e.g. Google gives it only once and can be easily lost.
+		If len(iRow.RefreshToken)=0
+			Do method getNewToken
+		Else
+			Do method refreshToken
+		End If
+	Else
+		;  If a valid token is in the instance row the return it to the callback method
+		Do iCallbackObject.[iCallbackMethod](iRow.AccessToken,iRow.RefreshToken,iRow.ExpiresOn)
+	End If
+End If
+Quit method kFalse

@@ -1,0 +1,104 @@
+{
+	"classtype": "kObjectclass",
+	"internalversion": 385,
+	"designtaskname": "Startup_Task",
+	"cvardefs": [
+		{
+			"name": "AUTHWINDOW",
+			"order": 1,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000,
+			"initval": "'oAuth2Window'"
+		}
+	],
+	"ivardefs": [
+		{
+			"name": "iAmJS",
+			"order": 7,
+			"type": "kBoolean",
+			"subtype": 0,
+			"sublen": 0,
+			"initval": "kFalse"
+		},
+		{
+			"name": "iAuthWindowID",
+			"order": 5,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iCallbackMethod",
+			"order": 3,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iCallbackMethodAuthWindow",
+			"order": 8,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iCallbackMethodError",
+			"order": 9,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iCallbackObject",
+			"order": 2,
+			"type": "kItemref",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "iCallbackObjectAuthWindow",
+			"order": 10,
+			"type": "kItemref",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "iFormInstance",
+			"order": 6,
+			"type": "kItemref",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "iHTTPWorker",
+			"order": 4,
+			"type": "kObject",
+			"subtype": ".OW3.OW3 Worker Objects\\HTTPClientWorker",
+			"sublen": 0
+		},
+		{
+			"name": "iRow",
+			"order": 1,
+			"type": "kRow",
+			"subtype": "sAuthMainRow",
+			"sublen": 0
+		}
+	],
+	"properties": {
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2018-11-07 20:36:24",
+		"desc": "",
+		"editor": "",
+		"editordata": "",
+		"external": true,
+		"issupercomponent": false,
+		"moddate": "2018-11-27 12:26:47",
+		"selfcontained": false,
+		"showascheckedout": false,
+		"userinfo": "",
+		"version": ""
+	}
+}

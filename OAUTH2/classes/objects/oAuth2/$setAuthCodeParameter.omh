@@ -1,0 +1,9 @@
+;  Check if parameter is in the list
+Do iRow.CodeParameters.$search($ref.C1=pKey,1,0,0,0) Returns lLine
+If lLine=0
+	;  Append parameter
+	Do iRow.CodeParameters.$add(pKey,pValue)
+Else
+	;  Update parameter
+	Calculate iRow.CodeParameters.[lLine].C2 as pValue
+End If

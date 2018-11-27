@@ -1,0 +1,10 @@
+;  This method is used to let the oAuth2 object know that the server has responsed to the access code request
+Do method closeAuthWindow
+;  Check if the access code has been returned
+If len(pAccessCode)=0
+	Calculate lError as 'No access code returned from the server. That is all we know.'
+	Do iCallbackObject.[iCallbackMethod](iRow.AccessToken,iRow.RefreshToken,iRow.ExpiresOn,lError)
+Else
+	Do method finaliseTokenContent (pAccessCode) Returns iRow.TokenContent
+	Do method requestToken
+End If

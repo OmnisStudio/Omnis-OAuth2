@@ -1,0 +1,15 @@
+;  This method will use a javascript little hack to close the window that was opened by the browser
+;  to get the authorization from the user in order to get the access code if it was opened by a remote form
+;  otherwise it will test if the window of the oBrowser object is opened and if true, will close it.
+;  Hopefully in a future version of Omnis there will be a method which allows us to close the opened window.
+If iAmJS
+	Calculate #1 as left(sys(1),pos(".",sys(1))-1)
+	If sys(1)>8     ;; Studio major version number
+		Do iFormInstance.$closeurl(iAuthWindowID)
+	End If
+Else
+	Test for window open {wAuth2Browser}
+	If flag true
+		Close window instance wAuth2Browser
+	End If
+End If

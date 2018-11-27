@@ -1,0 +1,3 @@
+;  Here we add the access code to the content of the access token request.
+Calculate lContent as con('client_secret=',iRow.ClientSecret,'&client_id=',iRow.ClientID,'&grant_type=authorization_code','&redirect_uri=',iRow.RedirectURI,'&code=',pCode)
+Quit method lContent
