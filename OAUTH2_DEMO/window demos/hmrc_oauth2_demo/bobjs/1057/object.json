@@ -1,0 +1,30 @@
+{
+	"ident": 1057,
+	"order": 16394,
+	"objtype": "kText",
+	"properties": {
+		"align": "kLeftJst",
+		"backcolor": "kColorBackFill",
+		"backpattern": 15,
+		"designactive": true,
+		"edgefloat": "kEFnone",
+		"fieldstyle": "CtrlEditText",
+		"font": 5,
+		"fontsize": 0,
+		"fontstyle": "kPlain",
+		"forecolor": "kColorForeFill",
+		"height": 37,
+		"left": 16,
+		"objlink": 0,
+		"text": {
+			"type": 14,
+			"calc": "Now that we have the credentials, the oAuth2 library will automatically get an access token for us when clicking on Make Request for the first time. You can then click on Make Request again to make a test request with the access token."
+		},
+		"textcolor": "kColorWindowText",
+		"top": 336,
+		"userinfo": "",
+		"vertcentertext": false,
+		"visible": true,
+		"width": 688
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"ident": 1056,
+	"order": 16393,
+	"objtype": "kText",
+	"properties": {
+		"align": "kLeftJst",
+		"backcolor": "kColorBackFill",
+		"backpattern": 15,
+		"designactive": true,
+		"edgefloat": "kEFnone",
+		"fieldstyle": "CtrlEditText",
+		"font": 5,
+		"fontsize": 0,
+		"fontstyle": "kPlain",
+		"forecolor": "kColorForeFill",
+		"height": 83,
+		"left": 432,
+		"objlink": 0,
+		"text": {
+			"type": 14,
+			"calc": "This button will call a method in the oAuth2 object which will add a key and a value to the parameters of the authorization code request. This can be used for oAuth2 server which have extra requirements."
+		},
+		"textcolor": "kColorWindowText",
+		"top": 552,
+		"userinfo": "",
+		"vertcentertext": false,
+		"visible": true,
+		"width": 272
+	}
+}

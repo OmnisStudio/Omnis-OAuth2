@@ -1,0 +1,30 @@
+{
+	"ident": 1047,
+	"order": 16388,
+	"objtype": "kText",
+	"properties": {
+		"align": "kLeftJst",
+		"backcolor": "kColorBackFill",
+		"backpattern": 15,
+		"designactive": true,
+		"edgefloat": "kEFnone",
+		"fieldstyle": "CtrlEditText",
+		"font": 5,
+		"fontsize": 0,
+		"fontstyle": "kPlain",
+		"forecolor": "kColorForeFill",
+		"height": 112,
+		"left": 16,
+		"objlink": 0,
+		"text": {
+			"type": 14,
+			"calc": "More details can be found on the HMRC documentation, however a user-restricted API enpoint is simply an API endpoint which requires the access token the oAuth2 object just got for us.\r\rMore info: https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation/user-restricted-endpoints\r"
+		},
+		"textcolor": "kColorWindowText",
+		"top": 384,
+		"userinfo": "",
+		"vertcentertext": false,
+		"visible": true,
+		"width": 360
+	}
+}

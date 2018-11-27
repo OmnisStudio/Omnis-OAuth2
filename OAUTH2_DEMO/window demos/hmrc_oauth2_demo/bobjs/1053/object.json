@@ -1,0 +1,30 @@
+{
+	"ident": 1053,
+	"order": 16391,
+	"objtype": "kText",
+	"properties": {
+		"align": "kLeftJst",
+		"backcolor": "kColorBackFill",
+		"backpattern": 15,
+		"designactive": true,
+		"edgefloat": "kEFnone",
+		"fieldstyle": "CtrlEditText",
+		"font": 5,
+		"fontsize": 0,
+		"fontstyle": "kPlain",
+		"forecolor": "kColorForeFill",
+		"height": 83,
+		"left": 208,
+		"objlink": 0,
+		"text": {
+			"type": 14,
+			"calc": "This button will call a method in the oAuth2 object which reutrns a list of the parameters used in the authorization code request."
+		},
+		"textcolor": "kColorWindowText",
+		"top": 552,
+		"userinfo": "",
+		"vertcentertext": false,
+		"visible": true,
+		"width": 184
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"ident": 1016,
+	"order": 16385,
+	"objtype": "kText",
+	"properties": {
+		"align": "kLeftJst",
+		"backcolor": "kColorBackFill",
+		"backpattern": 15,
+		"designactive": true,
+		"edgefloat": "kEFrightBottom",
+		"fieldstyle": "CtrlEditText",
+		"font": 4,
+		"fontsize": 0,
+		"fontstyle": "kPlain",
+		"forecolor": "kColorForeFill",
+		"height": 328,
+		"left": 6,
+		"objlink": 0,
+		"text": {
+			"type": 14,
+			"calc": "Thanks to the oAuth2 standard, we can identify ourselves to different applications with ease. With this library, you will be able to obtain an Access Token which can then used in the future to identify yourself to third parties apps. In this demo, you can see how you can use oAuth2 to integrate with HMRC's user-restricted services by obtaining an access token and then using it to make an API requesto to verify its validity.\r\rYou can either enter credentials if you are more experienced and set everything up, otherwise we have set a testing environment for you and you can simply use the \"Use test credentials\" button to fill in the required fields.\r\rAfterwards, you can use the Make Request button to make a request to HMRC's user-restricted API, the code will check if there is an access token and promp you for authorization if it is required. Note that after giving authorization you need to click on Make Request again in order to trigger the process again now that you have obtained an access token thanks to the oAuth2 library.\r\rAfter the request is completed, the result will be shown in the text box underneath the button.\r\rHow oAuth2 flow works - oAuth2 follows a flow in order to allow the standard to be implemented across different services. The usual flow is make a request to get an authorization code, which has a time limit in which it can be exchanged for an authorization token by making a request to the authorization token URL. \rIn order to obtain the authorization code, an URI is created which is usually opened in the browser so that the user can enter their login details in order to identify themselves."
+		},
+		"textcolor": "kColorWindowText",
+		"top": 8,
+		"userinfo": "",
+		"vertcentertext": false,
+		"visible": true,
+		"width": 576
+	}
+}

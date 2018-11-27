@@ -1,0 +1,30 @@
+{
+	"ident": 1051,
+	"order": 16390,
+	"objtype": "kText",
+	"properties": {
+		"align": "kLeftJst",
+		"backcolor": "kColorBackFill",
+		"backpattern": 15,
+		"designactive": true,
+		"edgefloat": "kEFnone",
+		"fieldstyle": "CtrlEditText",
+		"font": 5,
+		"fontsize": 0,
+		"fontstyle": "kPlain",
+		"forecolor": "kColorForeFill",
+		"height": 83,
+		"left": 24,
+		"objlink": 0,
+		"text": {
+			"type": 14,
+			"calc": "This button will call a method in the oAuth2 object to clear the token currently saved in the instance."
+		},
+		"textcolor": "kColorWindowText",
+		"top": 552,
+		"userinfo": "",
+		"vertcentertext": false,
+		"visible": true,
+		"width": 160
+	}
+}

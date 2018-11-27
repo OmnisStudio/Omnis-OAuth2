@@ -1,0 +1,31 @@
+On evClick     ;; Event Parameters - pRow( Itemreference )
+	;  Check if the $serverport is set to 9816
+	Calculate lServerPort as $root.$prefs.$serverport
+	If lServerPort=9816
+		
+		If len(iAccessToken)=0
+			
+			
+			;  Calculating the required parameters.
+			;  Calculate iClientID as 'x6eV2buwP5aHfjA0h0CwLZMMisYa'
+			;  Calculate iClientSecret as 'b57131b6-7915-452c-9ab1-c8c2f2485871'
+			;  Calculate iCodeURL as 'https://test-api.service.hmrc.gov.uk/oauth/authorize'
+			;  Calculate iTokenURL as 'https://test-api.service.hmrc.gov.uk/oauth/token'
+			;  Calculate iScope as 'hello'
+			
+			
+			;  Initializing the oAuth2 object with $init
+			Do iAuth.$init(iClientID,iClientSecret,iCodeURL,iTokenURL,iScope)
+			
+			;  After the oAuth2 object is initialized, we can call the $getToken method
+			Do iAuth.$getToken($cinst,)
+			;  By default $getToken will have a callback method of $tokenReceived
+			;  however you can specify any other method in the second parameter.
+			OK message Authorization Required {Please provide authorization and try again.}
+		Else
+			Do method $makeRequest
+		End If
+	Else
+		OK message Server port error {Your $serverport should be set to 9816. It's currently set to [lServerPort].}
+		Quit method
+	End If

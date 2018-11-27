@@ -1,0 +1,27 @@
+{
+	"ident": 1061,
+	"order": 16398,
+	"objtype": "kLabel",
+	"properties": {
+		"align": "kLeftJst",
+		"backcolor": "kColorBackFill",
+		"backpattern": 15,
+		"designactive": true,
+		"edgefloat": "kEFnone",
+		"fieldstyle": "CtrlEditText",
+		"font": 5,
+		"fontsize": 0,
+		"fontstyle": "kPlain",
+		"forecolor": "kColorForeFill",
+		"height": 16,
+		"left": 24,
+		"objlink": 0,
+		"text": "Authorization Token URL:",
+		"textcolor": "kColorWindowText",
+		"top": 264,
+		"userinfo": "",
+		"vertcentertext": false,
+		"visible": true,
+		"width": 256
+	}
+}

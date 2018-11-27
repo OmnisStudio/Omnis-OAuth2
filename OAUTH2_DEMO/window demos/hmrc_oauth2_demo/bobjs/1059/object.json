@@ -1,0 +1,27 @@
+{
+	"ident": 1059,
+	"order": 16396,
+	"objtype": "kLabel",
+	"properties": {
+		"align": "kLeftJst",
+		"backcolor": "kColorBackFill",
+		"backpattern": 15,
+		"designactive": true,
+		"edgefloat": "kEFnone",
+		"fieldstyle": "CtrlEditText",
+		"font": 5,
+		"fontsize": 0,
+		"fontstyle": "kPlain",
+		"forecolor": "kColorForeFill",
+		"height": 16,
+		"left": 24,
+		"objlink": 0,
+		"text": "Redirect URI:",
+		"textcolor": "kColorWindowText",
+		"top": 192,
+		"userinfo": "",
+		"vertcentertext": false,
+		"visible": true,
+		"width": 256
+	}
+}

@@ -1,0 +1,14 @@
+On evClick     ;; Event Parameters - pRow( Itemreference )
+	;  Clicking on this only after we got a token so the oAuth2
+	;  object is already initialized.
+	Do iAuth.$clearToken()
+	;  Now if you try to click on Get Token again, it will restart the oAuth2
+	;  process to get a new access token.
+	
+	
+	;  Just resetting the instance values for cosmetic reasons.
+	Calculate iAccessToken as #NULL
+	Calculate iRefreshToken as #NULL
+	Calculate iExpireOn as #NULL
+	Calculate iError as #NULL
+	Do $cinst.$redraw()

@@ -1,0 +1,9 @@
+;  We calculate the tokens, the expiration date and the errors if any.
+Calculate iAccessToken as pAccessToken
+Calculate iRefreshToken as pRefreshToken
+Calculate iExpireOn as pExpireOn
+
+;  At this point you could add the returned values to a database for future use.
+
+;  Just redrwaing the window to show the values.
+Do $cinst.$redraw()

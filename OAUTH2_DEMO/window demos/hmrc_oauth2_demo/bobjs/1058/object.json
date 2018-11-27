@@ -1,0 +1,27 @@
+{
+	"ident": 1058,
+	"order": 16395,
+	"objtype": "kLabel",
+	"properties": {
+		"align": "kLeftJst",
+		"backcolor": "kColorBackFill",
+		"backpattern": 15,
+		"designactive": true,
+		"edgefloat": "kEFnone",
+		"fieldstyle": "CtrlEditText",
+		"font": 5,
+		"fontsize": 0,
+		"fontstyle": "kPlain",
+		"forecolor": "kColorForeFill",
+		"height": 16,
+		"left": 24,
+		"objlink": 0,
+		"text": "Client ID:",
+		"textcolor": "kColorWindowText",
+		"top": 120,
+		"userinfo": "",
+		"vertcentertext": false,
+		"visible": true,
+		"width": 256
+	}
+}

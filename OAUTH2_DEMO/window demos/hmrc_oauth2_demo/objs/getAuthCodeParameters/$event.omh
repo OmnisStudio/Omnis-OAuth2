@@ -1,0 +1,11 @@
+On evClick     ;; Event Parameters - pRow( Itemreference )
+	
+	;  Init first
+	Do method $testCredentials
+	
+	;  Initializing the oAuth2 object with $init
+	Do iAuth.$init(iClientID,iClientSecret,iCodeURL,iTokenURL,iScope)
+	Breakpoint
+	
+	;  Here you can see the returned code parameters in iCodeParameters
+	Do iAuth.$getAuthCodeParameters() Returns iCodeParameters

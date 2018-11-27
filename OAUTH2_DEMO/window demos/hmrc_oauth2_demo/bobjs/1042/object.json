@@ -1,0 +1,27 @@
+{
+	"ident": 1042,
+	"order": 16386,
+	"objtype": "kLabel",
+	"properties": {
+		"align": "kLeftJst",
+		"backcolor": "kColorBackFill",
+		"backpattern": 15,
+		"designactive": true,
+		"edgefloat": "kEFnone",
+		"fieldstyle": "CtrlEditText",
+		"font": 5,
+		"fontsize": 0,
+		"fontstyle": "kPlain",
+		"forecolor": "kColorForeFill",
+		"height": 16,
+		"left": 24,
+		"objlink": 0,
+		"text": "Please enter crendentials or use the \"Use test credentials\" button.",
+		"textcolor": "kColorWindowText",
+		"top": 80,
+		"userinfo": "",
+		"vertcentertext": false,
+		"visible": true,
+		"width": 350
+	}
+}
