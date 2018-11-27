@@ -1,0 +1,176 @@
+[
+	{
+		"name": "$construct",
+		"ident": 1,
+		"order": 1,
+		"clientexec": false,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$destruct",
+		"ident": 2,
+		"order": 2,
+		"clientexec": false,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$tokenReceived",
+		"ident": 0,
+		"order": 3,
+		"clientexec": false,
+		"pvardefs": [
+			{
+				"name": "pAccessToken",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			},
+			{
+				"name": "pRefreshToken",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 2
+			},
+			{
+				"name": "pExpireOn",
+				"order": 3,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 0,
+				"param": 3
+			},
+			{
+				"name": "pError",
+				"order": 4,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 4
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$tokenError",
+		"ident": 7,
+		"order": 4,
+		"clientexec": false,
+		"pvardefs": [
+			{
+				"name": "pError",
+				"order": 1,
+				"type": "kRow",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$init",
+		"ident": 3,
+		"order": 5,
+		"clientexec": true,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$pushed",
+		"ident": 4,
+		"order": 6,
+		"clientexec": true,
+		"pvardefs": [
+			{
+				"name": "pRow",
+				"order": 1,
+				"type": "kRow",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$testCredentials",
+		"ident": 5,
+		"order": 7,
+		"clientexec": false,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$completed",
+		"ident": 6,
+		"order": 8,
+		"clientexec": false,
+		"pvardefs": [
+			{
+				"name": "pResult",
+				"order": 1,
+				"type": "kRow",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$makeRequest",
+		"ident": 8,
+		"order": 9,
+		"clientexec": false,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lHeaders",
+				"order": 2,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lURL",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"initval": "'\thttps://test-api.service.hmrc.gov.uk//hello/user'"
+			}
+		]
+	}
+]

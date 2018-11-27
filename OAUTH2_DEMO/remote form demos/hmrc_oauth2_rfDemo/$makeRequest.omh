@@ -1,0 +1,6 @@
+Do lHeaders.$define('','')
+Do lHeaders.$add('Accept','application/vnd.hmrc.1.0+json')
+Do lHeaders.$add('Authorization',con('Bearer ',iAccessToken))
+Do iHTTP.$callbackinst.$assign($cinst)
+Do iHTTP.$init(lURL,kOW3httpMethodGet,lHeaders,'') Returns #F
+Do iHTTP.$run() Returns #F

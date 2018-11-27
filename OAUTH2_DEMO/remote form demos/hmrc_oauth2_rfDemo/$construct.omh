@@ -1,0 +1,3 @@
+;  Enter your initialization code here
+Do $cinst.$clientcommand("openpush",row())
+Do iAuth.$getAuthCodeParameters() Returns iCodeList

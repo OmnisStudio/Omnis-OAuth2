@@ -1,0 +1,182 @@
+{
+	"classtype": "kRemoteForm",
+	"internalversion": 563,
+	"designtaskname": "NewRemoteTask",
+	"nextident": 1036,
+	"lastgroupident": 4,
+	"cvardefs": [
+
+	],
+	"ivardefs": [
+		{
+			"name": "iAccessToken",
+			"order": 1,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iAuth",
+			"order": 14,
+			"type": "kObject",
+			"subtype": "OAUTH2.oAuth2",
+			"sublen": 0
+		},
+		{
+			"name": "iClientID",
+			"order": 7,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iClientSecret",
+			"order": 11,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iCodeList",
+			"order": 6,
+			"type": "kList",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "iCodeParameters",
+			"order": 16,
+			"type": "kList",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "iCodeURL",
+			"order": 10,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iError",
+			"order": 4,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iExpireOn",
+			"order": 3,
+			"type": "kDate",
+			"subtype": "kDatetime",
+			"sublen": 0
+		},
+		{
+			"name": "iFlag",
+			"order": 5,
+			"type": "kBoolean",
+			"subtype": 0,
+			"sublen": 0
+		},
+		{
+			"name": "iHTTP",
+			"order": 13,
+			"type": "kObject",
+			"subtype": ".OW3.OW3 Worker Objects\\HTTPClientWorker",
+			"sublen": 0
+		},
+		{
+			"name": "iRedirectURI",
+			"order": 15,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iRefreshToken",
+			"order": 2,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iResponse",
+			"order": 12,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iScope",
+			"order": 9,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iTokenURL",
+			"order": 8,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		}
+	],
+	"properties": {
+		"aligntogrid": false,
+		"alpha": 255,
+		"alwaysenabledobject": "",
+		"animatelayouttransitions": false,
+		"backalpha": 255,
+		"backcolor": "RGB(255,255,255)",
+		"backpattern": 0,
+		"cancelkeyobject": "",
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"contextmenu": "",
+		"createdate": "2018-11-13 10:36:31",
+		"currentlayoutbreakpoint": 768,
+		"defaultappearance": "kAppearanceiOS",
+		"desc": "",
+		"designshowmobiletitle": true,
+		"disabledefaultcontextmenu": false,
+		"editor": "",
+		"editordata": "",
+		"events": "",
+		"external": true,
+		"forecolor": "RGB(255,255,255)",
+		"horzgrid": 8,
+		"horzscroll": false,
+		"inheritedorder": 1,
+		"issupercomponent": false,
+		"layoutbreakpoints": "320,768",
+		"layouttype": "kLayoutTypeResponsive",
+		"left": 465,
+		"moddate": "2018-11-16 14:48:22",
+		"okkeyobject": "",
+		"serverlessclient": false,
+		"showascheckedout": false,
+		"showgrid": false,
+		"sizetogrid": false,
+		"startfield": 0,
+		"title": {
+			"type": 0,
+			"calc": "New remote form"
+		},
+		"top": 54,
+		"userinfo": "",
+		"version": "",
+		"vertgrid": 8,
+		"vertscroll": false
+	},
+	"layout": {
+		"width": 769,
+		"height": 787,
+		"320": {
+			"height": 0
+		},
+		"768": {
+			"height": 0
+		}
+	}
+}

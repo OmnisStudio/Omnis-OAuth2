@@ -1,0 +1,3 @@
+JavaScript: if (jOmnis.lastOpenedWindow) jOmnis.lastOpenedWindow.close()
+;  This code must be added to the $init of your remote form. It will allow Omnis to automatically close
+;  the pop-up window once the server responds to the access token request.

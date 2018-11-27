@@ -1,0 +1,1 @@
+Calculate iResponse as utf8tochar(pResult.responseContent)

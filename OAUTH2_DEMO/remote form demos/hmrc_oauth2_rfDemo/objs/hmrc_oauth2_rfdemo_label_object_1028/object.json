@@ -1,0 +1,60 @@
+{
+	"ident": 1028,
+	"order": 17,
+	"objtype": "kComponent",
+	"componentlib": "jsLabel",
+	"componentctrl": "Label Object",
+	"properties": {
+		"alpha": 255,
+		"backalpha": 255,
+		"backcolor": "RGB(255,255,255)",
+		"contextmenu": "",
+		"cssclassname": "",
+		"dataname": "",
+		"desgroup": 0,
+		"designactive": true,
+		"deslock": false,
+		"disabledefaultcontextmenu": false,
+		"disablesystemfocus": true,
+		"dropmode": "kAcceptNone",
+		"enabled": false,
+		"events": "",
+		"fieldstyle": "",
+		"font": 1,
+		"fontsize": 10,
+		"fontstyle": "kPlain",
+		"objlink": 0,
+		"preventlayoutanimation": false,
+		"text": "This button will call a method in the oAuth2 object which reutrns a list of the parameters used in the authorization code request.",
+		"textcolor": "kColorDefault",
+		"textishtml": false,
+		"tooltip": "",
+		"userinfo": "",
+		"vertcentertext": false,
+		"visible": true
+	},
+	"layout": {
+		"320": {
+			"left": 52,
+			"top": 309,
+			"width": 216,
+			"height": 104,
+			"align": "kLeftJst",
+			"dragborder": false,
+			"edgefloat": "kEFnone",
+			"errortextpos": "kJSErrorTextPosUnder",
+			"visible": true
+		},
+		"768": {
+			"left": 256,
+			"top": 592,
+			"width": 216,
+			"height": 104,
+			"align": "kLeftJst",
+			"dragborder": false,
+			"edgefloat": "kEFnone",
+			"errortextpos": "kJSErrorTextPosUnder",
+			"visible": true
+		}
+	}
+}

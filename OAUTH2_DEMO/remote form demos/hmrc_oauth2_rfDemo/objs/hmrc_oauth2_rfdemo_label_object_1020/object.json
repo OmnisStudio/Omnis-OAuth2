@@ -1,0 +1,60 @@
+{
+	"ident": 1020,
+	"order": 11,
+	"objtype": "kComponent",
+	"componentlib": "jsLabel",
+	"componentctrl": "Label Object",
+	"properties": {
+		"alpha": 255,
+		"backalpha": 255,
+		"backcolor": "RGB(255,255,255)",
+		"contextmenu": "",
+		"cssclassname": "",
+		"dataname": "",
+		"desgroup": 0,
+		"designactive": true,
+		"deslock": false,
+		"disabledefaultcontextmenu": false,
+		"disablesystemfocus": true,
+		"dropmode": "kAcceptNone",
+		"enabled": false,
+		"events": "",
+		"fieldstyle": "",
+		"font": 1,
+		"fontsize": 10,
+		"fontstyle": "kPlain",
+		"objlink": 0,
+		"preventlayoutanimation": false,
+		"text": "Now that we have the credentials, the oAuth2 library will automatically get an access token for us when clicking on Make Request for the first time. You can then click on Make Request again to make a test request with the access token.",
+		"textcolor": "kColorDefault",
+		"textishtml": false,
+		"tooltip": "",
+		"userinfo": "",
+		"vertcentertext": false,
+		"visible": true
+	},
+	"layout": {
+		"320": {
+			"left": 24,
+			"top": 224,
+			"width": 616,
+			"height": 40,
+			"align": "kLeftJst",
+			"dragborder": false,
+			"edgefloat": "kEFnone",
+			"errortextpos": "kJSErrorTextPosUnder",
+			"visible": true
+		},
+		"768": {
+			"left": 16,
+			"top": 296,
+			"width": 712,
+			"height": 48,
+			"align": "kLeftJst",
+			"dragborder": false,
+			"edgefloat": "kEFnone",
+			"errortextpos": "kJSErrorTextPosUnder",
+			"visible": true
+		}
+	}
+}
