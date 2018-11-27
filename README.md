@@ -5,8 +5,11 @@ Omnis Studio **8.1.6** or later.
 ##### OAUTH2
 This folder contains the source JSON files for the OAuth2 Omnis library which can be used to integrate your Omnis application with other third party services via OAuth2 standard.
 
-##### DEMO
+##### OAUTH2_DEMO
 This folder contains the source JSON files for the OAuth2 demo Omnis library which can be used to learn more about the OAuth2 library.
+
+##### OAUTH2_OmnisLibraries
+This folder contains the Omnis libraries (.lbs) for the OAuth2 standard and a demo.
 
 # Usage
 
