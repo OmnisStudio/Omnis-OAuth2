@@ -1,4 +1,5 @@
 ;  This sets the passed parameters in the instance row
 Calculate iRow.AccessToken as pAccessToken
 Calculate iRow.RefreshToken as pRefreshToken
-Calculate iRow.ExpiresOn as pExpiresOn
+Calculate lExpiresOn as getdatetime()+pExpiresOn
+Calculate iRow.ExpiresOn as lExpiresOn
