@@ -16,7 +16,7 @@ This folder contains the source JSON files for the OAuth2 demo Omnis library whi
 
 ##### OAUTH2_OmnisLibraries
 
-This folder contains the Omnis libraries (.lbs) for the OAuth2 standard and a demo.
+This folder contains the Omnis libraries (.lbs) for the OAuth2 Omnis library and a demo which shows how to utilise it.
 
 
 # Usage
