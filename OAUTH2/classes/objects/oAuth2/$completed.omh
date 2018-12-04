@@ -1,7 +1,9 @@
 ;  Check the outcome of the API request
 If pResults.httpStatusCode=200
 	Do OJSON.$jsontolistorrow(pResults.responseContent) Returns lResponse
-	Do method $setToken (lResponse.access_token,lResponse.refresh_token,lResponse.expires_in)
+	Do getdatetime() Returns lExpiresOn
+	Calculate lExpiresOn as lExpiresOn+lResponse.expires_in
+	Do method $setToken (lResponse.access_token,lResponse.refresh_token,lExpiresOn)
 	Do iCallbackObject.[iCallbackMethod](iRow.AccessToken,iRow.RefreshToken,iRow.ExpiresOn)
 Else
 	Do iCallbackObject.[iCallbackMethodError](pResults)

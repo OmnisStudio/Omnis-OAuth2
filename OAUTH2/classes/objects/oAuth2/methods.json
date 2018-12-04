@@ -132,13 +132,7 @@
 			}
 		],
 		"lvardefs": [
-			{
-				"name": "lExpiresOn",
-				"order": 4,
-				"type": "kDate",
-				"subtype": "kDatetime",
-				"sublen": 0
-			}
+
 		]
 	},
 	{
@@ -593,6 +587,13 @@
 			}
 		],
 		"lvardefs": [
+			{
+				"name": "lExpiresOn",
+				"order": 4,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 0
+			},
 			{
 				"name": "lResponse",
 				"order": 3,

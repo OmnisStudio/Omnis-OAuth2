@@ -29,6 +29,7 @@ Else
 		If len(iRow.RefreshToken)=0
 			Do method getNewToken
 		Else
+			Do method buildRefreshContent Returns iRow.RefreshContent
 			Do method refreshToken
 		End If
 	Else
